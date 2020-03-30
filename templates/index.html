@@ -1,0 +1,126 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="row " style="padding: 2%;">
+  <div class="card col-lg-4 col-sm-6" style="width: 100%;height: 100%;">
+    <img
+      src="https://www.mensjournal.com/wp-content/uploads/2019/02/Rwanda_main.jpg?w=1600&h=900&crop=1"
+      class="card-img-top"
+      style="height:230px;"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">Rwanda</h5>
+      <p class="card-text">
+        {% for key,val in Rdata.items() : %}
+          <div class=" alert alert-primary "  role="alert">
+            <span style="font-weight: bold;"> {{key}} : {{val}} </span> 
+          </div>
+        {% endfor %}
+    
+      </p>
+      
+    </div>
+  </div>
+
+  <div class="card card col-lg-4 col-sm-6" style="width: 100%;height: 100%;">
+    <img
+      src="https://i2.wp.com/www.busiweek.com/wp-content/uploads/2019/06/Nairobi-how-to-live-like-a-local-kenya-View-KICC-2-4d555def6f70.jpg?resize=1210%2C642&ssl=1"
+      class="card-img-top"
+      alt="..."
+      style="height:230px;"
+    />
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">Kenya</h5>
+      <p class="card-text">
+        {% for key,val in Kdata.items() : %}
+          <div class="alert alert-primary"  role="alert">
+            <span style="font-weight: bold;"> {{key}} : {{val}} </span> 
+          </div>
+        {% endfor %}
+      </p>
+  
+    </div>
+  </div>
+
+  <div class="card card col-lg-4 col-sm-6" style="width: 100%;height: 100%;">
+    <img
+      src="https://i0.wp.com/www.nkuringosafaris.com/wp-content/uploads/2019/03/kampala.jpg?resize=1200%2C675&ssl=1"
+      class="card-img-top"
+      alt="..."
+      style="height:230px;"
+    />
+
+    <div class="card-body" >
+      <h5 class="card-title font-weight-bold">Uganda</h5>
+      <p class="card-text">
+        {% for key,val in Ugdata.items() : %}
+          <div class="alert alert-primary"  role="alert">
+            <span style="font-weight: bold;"> {{key}} : {{val}} </span> 
+          </div>
+        {% endfor %}
+      </p>
+    
+    </div>
+  </div>
+
+  <div class="card card col-lg-4 col-sm-6" style="width: 100%;height: 100%;">
+    <img
+      src="https://www.proudtanzaniasafaris.com/wp-content/uploads/2019/07/DarEsSalaam.jpg"
+      class="card-img-top"
+      alt="..."
+      style="height:230px;"
+    />
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">Tanzania</h5>
+      <p class="card-text">
+        {% for key,val in Tzdata.items() : %}
+        <div class="alert alert-primary"  role="alert">
+          <span style="font-weight: bold;"> {{key}} : {{val}} </span> 
+        </div>
+      {% endfor %}
+      </p>
+    
+    </div>
+  </div>
+
+  <div class="card card col-lg-4 col-sm-6" style="width: 100%;height: 100%;">
+    <img
+      src="https://i.redd.it/vh6i7jio33y11.jpg"
+      class="card-img-top"
+      alt="..."
+      style="height:230px;"
+    />
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">Burundi</h5>
+      <p class="card-text">
+        {% for key,val in Bdata.items() : %}
+        <div class="alert alert-primary"  role="alert">
+          <span style="font-weight: bold;"> {{key}} : {{val}} </span> 
+        </div>
+      {% endfor %}
+      </p>
+     
+    </div>
+  </div>
+
+  <div class="card card col-lg-4 col-sm-6" style="width: 100%;height: 100%;">
+    <img
+      src="https://jubaeye.net/wp-content/uploads/2018/10/19748445_1446177255448950_3708763043033280161_n-300x222.jpg"
+      class="card-img-top"
+      alt="..."
+      style="height:230px;"
+    />
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">South Sudan</h5>
+      <p class="card-text">
+        {% for key,val in SSdata.items() : %}
+        <div class="alert alert-primary"  role="alert">
+          <span style="font-weight: bold;"> {{key}} : {{val}} </span> 
+        </div>
+      {% endfor %}
+      </p>
+     
+    </div>
+  </div>
+</div>
+{% endblock %}
