@@ -1,7 +1,10 @@
 from flask import Flask, render_template
 import requests
+from flask_disqus import Disqus
+
 
 app = Flask(__name__)
+disq = Disqus(app)
 {'date': '2020-3-27', 'confirmed': 54, 'deaths': 0, 'recovered': 0}
 
 
