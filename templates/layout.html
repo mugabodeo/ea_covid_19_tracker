@@ -47,8 +47,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    {% autoescape false %} {{ disqus_dev() }} {{
-    disqus_show_comments("comments_name") }} {% endautoescape %}
+    <div>
+      {% autoescape false %} {{ disqus_dev() }} {{
+      disqus_show_comments("comments_name") }} {% endautoescape %}
+    </div>
+
     <p class="font-weight-bold text-center">
       made with <span class="fas fa-heart"></span> Love from Rwanda
     </p>
