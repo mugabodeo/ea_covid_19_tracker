@@ -1,10 +1,8 @@
 from flask import Flask, render_template
 import requests
-from flask_disqus import Disqus
 
 
 app = Flask(__name__)
-disq = Disqus(app)
 
 
 @app.route('/')
