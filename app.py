@@ -10,8 +10,6 @@ def home():
     req_data = requests.get(
         "https://pomber.github.io/covid19/timeseries.json").json()
     print(req_data["Rwanda"])
-    Bdata = {'date': req_data["Rwanda"][-1]["date"],
-             'confirmed': 0, 'deaths': 0, 'recovered': 0}
 
     SSdata = {'date': req_data["Rwanda"][-1]["date"],
               'confirmed': 0, 'deaths': 0, 'recovered': 0}
@@ -21,6 +19,6 @@ def home():
                            Kdata=req_data["Kenya"][-1],
                            Ugdata=req_data["Uganda"][-1],
                            Tzdata=req_data["Tanzania"][-1],
-                           Bdata=Bdata,
+                           Bdata=req_data["Burundi"][-1],
                            SSdata=SSdata
                            )
